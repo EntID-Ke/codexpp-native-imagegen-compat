@@ -1,0 +1,9 @@
+*
+!/.gitignore
+!/LICENSE
+!/README.md
+!/codexpp.json
+!/renderer.js
+!/backend/
+!/backend/main.mjs
+!/backend/patch.mjs

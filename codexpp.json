@@ -1,0 +1,32 @@
+{
+  "id": "native-imagegen-compat",
+  "name": "Native ImageGen Compatibility",
+  "version": "1.0.1",
+  "description": "\u4fee\u590d Codex++ \u7eaf API \u6a21\u5f0f\u4e0b\u7684\u539f\u751f image_gen \u8c03\u7528\u95ee\u9898\u3002",
+  "engines": { "codexpp": ">=2.6.2 <3" },
+  "renderer": "renderer.js",
+  "backend": { "script": "backend/main.mjs" },
+  "config": {
+    "active": {
+      "type": "boolean",
+      "title": { "zh": "\u542f\u7528\u751f\u56fe\u517c\u5bb9\u4fee\u590d", "en": "Apply compatibility fix" },
+      "default": false
+    },
+    "providerIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "title": { "zh": "\u4f9b\u5e94\u5546 ID", "en": "Provider IDs" },
+      "default": []
+    },
+    "originator": {
+      "type": "string",
+      "title": "Originator",
+      "default": "CodexPlusPlus"
+    },
+    "userAgent": {
+      "type": "string",
+      "title": "User-Agent",
+      "default": "CodexPlusPlus/2.6.2"
+    }
+  }
+}
